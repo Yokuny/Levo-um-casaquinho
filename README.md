@@ -1,10 +1,8 @@
-# levo um casaquinho
- Uma das principais dores de quem vai dar um passeio ou pretende ir para algum destino por alguns dias é saber que roupa levar!
- 
- Por esse motivo, nesse desafio sua tarefa vai ser construir a aplicação mais prática pra esse fim: uma página simples onde, a partir do nome de uma cidade, são exibidas as informações como temperatura atual, máxima, mínima e a previsão para os próximos dias.
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
- # run
+Currently, two official plugins are available:
 
- npm install
-    npm run dev
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
