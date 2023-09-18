@@ -8,7 +8,7 @@ export const Card = styled.div`
   padding: 1.2em;
   border-radius: 8px;
   background-color: var(--background-primary);
-  border-right: 6px solid ${({ backgroundColor }) => backgroundColor};
+  border-right: 6px solid ${({ backgroundcolor }) => backgroundcolor};
   h1 {
     font-size: 3.2rem;
     font-weight: 700;

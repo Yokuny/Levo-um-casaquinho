@@ -47,6 +47,12 @@ body {
 	min-height: 100vh;
 	line-height: 1;
 }
+@media (max-width: 768px){
+	body {
+		padding: 1rem;
+	}
+} 
+
 ol, ul {
 	list-style: none;
 }

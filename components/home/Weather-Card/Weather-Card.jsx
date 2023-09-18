@@ -6,7 +6,7 @@ const Weather_Card = ({ data }) => {
   const { currentTemp, minTemp, maxTemp, cityName, weatherDescription } = getWeatherData(data);
 
   return (
-    <Card backgroundColor={weatherDescription.color}>
+    <Card backgroundcolor={weatherDescription.color}>
       <CityInfo>
         <h2>
           <span>agora: </span>
