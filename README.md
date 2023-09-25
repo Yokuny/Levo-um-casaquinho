@@ -13,10 +13,12 @@ Construa uma aplicação web simples para exibir informações de previsão do t
 
     # Instalar as dependências
     npm install
+
 <br>
 
     # Iniciar o servidor de desenvolvimento
     npm run dev
+
 <br>
 
     # Abrir o aplicativo no navegador
@@ -26,6 +28,7 @@ Construa uma aplicação web simples para exibir informações de previsão do t
 
     # Adquira a imagem do docker
     docker pull yokuny/levo-um-casaquinho
+
 <br>
     
     # Rode o container
