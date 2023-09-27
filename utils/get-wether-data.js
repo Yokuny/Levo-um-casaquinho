@@ -2,7 +2,9 @@ const getWeatherData = (data) => {
   let currentTemp = (data?.list[0]?.main.temp ?? 0) - 273.15;
   let minTemp = (data?.list[0]?.main.temp_min ?? 0) - 273.15;
   let maxTemp = (data?.list[0]?.main.temp_max ?? 0) - 273.15;
+
   const cityName = data?.city?.name ?? "";
+
   const weatherDescription = data?.list[0]?.weather[0]?.main ?? "";
   const weatherDescriptionObject = {
     title: "-",

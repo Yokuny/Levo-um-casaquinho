@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Form, Title } from "./Title-Search.styles";
+import { Container, Form, Title } from "./Title-Search.styles";
 
-const Title_Search = ({ city, setCity }) => {
+const Title_Search = ({ city, setCity, errorMsg }) => {
   const [cityInput, setCityInput] = useState(city);
 
   const handleSubmit = (event) => {
@@ -16,7 +16,7 @@ const Title_Search = ({ city, setCity }) => {
   };
 
   return (
-    <div>
+    <Container>
       <Title>LEVO UM CASAQUINHO?</Title>
       <Form onSubmit={(event) => handleSubmit(event)}>
         <input
@@ -27,7 +27,8 @@ const Title_Search = ({ city, setCity }) => {
         />
         <button type="submit">Buscar</button>
       </Form>
-    </div>
+      <p>{errorMsg}</p>
+    </Container>
   );
 };
 

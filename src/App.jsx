@@ -11,6 +11,7 @@ function App() {
   const [city, setCity] = useState("");
   const [actualCity, setActualCity] = useState("-");
   const [weather, setWeather] = useState(null);
+  const [errorMsg, setErrorMsg] = useState("");
 
   useEffect(() => {
     const getCity = async () => {
@@ -22,7 +23,9 @@ function App() {
         setActualCity(locationWeather?.city.name);
 
         locationWeather && setWeather(locationWeather);
+        setErrorMsg("");
       } catch (err) {
+        setErrorMsg("Cidade não encontrada");
         console.log(err);
       }
     };
@@ -31,7 +34,7 @@ function App() {
 
   return (
     <RootLayout>
-      <Title_Search city={actualCity} setCity={setCity} />
+      <Title_Search city={actualCity} setCity={setCity} errorMsg={errorMsg} />
       <Weather_Card data={weather} />
       {weather && <Chart_Graph data={weather} />}
     </RootLayout>

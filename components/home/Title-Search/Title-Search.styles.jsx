@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+`;
+
 export const Title = styled.h1`
   color: var(--color-primary);
   margin-bottom: 1rem;
